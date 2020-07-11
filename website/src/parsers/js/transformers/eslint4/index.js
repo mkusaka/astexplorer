@@ -1,7 +1,7 @@
 import pkg from 'eslint4/package.json';
 
 const ID = 'eslint-v4';
-const name = 'ESLint v4';
+const name = 'ESLint v5';
 
 export default {
   id: ID,
@@ -18,7 +18,7 @@ export default {
         'eslint4/lib/util/source-code',
         '../../utils/eslint4Utils',
       ],
-      (Linter, sourceCode, utils) => callback({eslint: new Linter(), sourceCode, utils}),
+      (Linter, sourceCode, utils) => callback({ eslint: new Linter(), sourceCode, utils }),
     );
   },
 

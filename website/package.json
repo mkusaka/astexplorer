@@ -24,6 +24,7 @@
     "eslint-plugin-require-in-package": "^1.0.3",
     "exports-loader": "^0.7.0",
     "file-loader": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^3.2.0",
     "http-server": "^0.12.1",
     "inline-manifest-webpack-plugin": "^4.0.1",
@@ -156,6 +157,7 @@
     "build-dev": "rimraf ../out/* && cross-env NODE_ENV=development webpack -d --mode=development",
     "watch": "webpack -dw --mode=development",
     "lint": "node_modules/eslint/bin/eslint.js src/",
-    "fontcustom": "fontcustom compile ./fontcustom/input-svg/ --config=./fontcustom/config.yml"
+    "fontcustom": "fontcustom compile ./fontcustom/input-svg/ --config=./fontcustom/config.yml",
+    "deploy": "yarn build && yarn gh-pages -d ../out"
   }
 }
