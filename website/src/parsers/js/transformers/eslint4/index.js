@@ -1,7 +1,7 @@
 import pkg from 'eslint4/package.json';
 
 const ID = 'eslint-v4';
-const name = 'ESLint v5';
+const name = 'ESLint v4';
 
 export default {
   id: ID,
